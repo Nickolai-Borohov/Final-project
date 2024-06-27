@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a25333fd-41cd-41e7-ace5-e7ef7c74759d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DZ_Second_Lesson/DZ_Second_Lesson.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 14.46.31.978.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 14.51.07.060.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 18.42.11.853.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 18.44.08.461.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 18.52.55.208.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 19.20.15.539.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 19.25.12.168.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 19.27.28.406.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 19.49.14.092.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-25-06-2024 19.51.18.332.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app-26-06-2024 11.21.56.252.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson3/Lesson3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson4/Lesson4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/jyskPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/jyskPages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/ApiTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/LogInTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/LogInTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/WishlistTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/WishlistTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/jyskTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/jyskTests/jyskTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2i3xbsRXyIYkrKOx7nymyes4cuf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.ApiTests.getTest.executor": "Run",
+    "TestNG.ApiTests.putTest.executor": "Run",
+    "TestNG.LogInTests.invalidLogInData.executor": "Run",
+    "TestNG.LogInTests.logIn.executor": "Run",
+    "TestNG.WishlistTests.ComparisonProductNames.executor": "Run",
+    "TestNG.WishlistTests.addProductToTheWishlist.executor": "Run",
+    "TestNG.jyskTests.compareProducts.executor": "Run",
+    "TestNG.jyskTests.searchProduct.executor": "Run",
+    "TestNG.jyskTests.searchProductAndAddToTheCart.executor": "Run",
+    "TestNG.jyskTests.searchProductViaBurgerMenu.executor": "Run",
+    "TestNG.jyskTests.searchProductsWithFilters.executor": "Run",
+    "TestNG.jyskTests.testTest.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java_Lessons\JyskProject\src\main\java\com\itacademy\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.jyskTests.searchProductViaBurgerMenu">
+    <configuration name="LogInTests.invalidLogInData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JyskProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.jyskTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy.jyskTests" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.jyskTests.LogInTests" />
+      <option name="METHOD_NAME" value="invalidLogInData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTests.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JyskProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.jyskTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy.jyskTests" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.jyskTests.LogInTests" />
+      <option name="METHOD_NAME" value="logIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jyskTests.compareProducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JyskProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.jyskTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy.jyskTests" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.jyskTests.jyskTests" />
+      <option name="METHOD_NAME" value="compareProducts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jyskTests.searchProductAndAddToTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JyskProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.jyskTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy.jyskTests" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.jyskTests.jyskTests" />
+      <option name="METHOD_NAME" value="searchProductAndAddToTheCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jyskTests.searchProductViaBurgerMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JyskProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.jyskTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy.jyskTests" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.jyskTests.jyskTests" />
+      <option name="METHOD_NAME" value="searchProductViaBurgerMenu" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.jyskTests.searchProductViaBurgerMenu" />
+        <item itemvalue="TestNG.jyskTests.compareProducts" />
+        <item itemvalue="TestNG.jyskTests.searchProductAndAddToTheCart" />
+        <item itemvalue="TestNG.LogInTests.logIn" />
+        <item itemvalue="TestNG.LogInTests.invalidLogInData" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a25333fd-41cd-41e7-ace5-e7ef7c74759d" name="Changes" comment="" />
+      <created>1718733140442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718733140442</updated>
+    </task>
+    <servers />
+  </component>
+</project>
