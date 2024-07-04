@@ -60,8 +60,6 @@ public class LogInTests extends BaseTest {
             LOGGER.info("You have successfully logged in to your account");
         }
         Thread.sleep(3000);
-
-
     }
 // nickolaiborohov@gmail.com
 //    Qwerty123!

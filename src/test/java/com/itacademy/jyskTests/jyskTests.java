@@ -5,15 +5,14 @@ import com.itacademy.jyskPages.CartPage;
 import com.itacademy.jyskPages.jyskMainPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class jyskTests extends BaseTest{
     private static final Logger LOGGER= LogManager.getLogger(jyskTests.class);
-    @Test
+    @Test (testName = "Pridumai Imena Testam ))")
     public void searchProductAndAddToTheCart() throws InterruptedException {
         BasePage basePage = new BasePage(driver);
         jyskMainPage jyskMainPage = new jyskMainPage(driver);
@@ -33,13 +32,14 @@ public class jyskTests extends BaseTest{
         basePage.openJyskWebsite();
         jyskMainPage.applyFilters();
     }
-    @Test
-    public void compareProducts() throws InterruptedException {
-        BasePage basePage = new BasePage(driver);
-        jyskMainPage jyskMainPage = new jyskMainPage(driver);
-        CartPage cartPage = new CartPage(driver);
-        basePage.openJyskWebsite();
-    }
+//    @Test
+//    public void compareProducts() throws InterruptedException {
+//        BasePage basePage = new BasePage(driver);
+//        jyskMainPage jyskMainPage = new jyskMainPage(driver);
+//        CartPage cartPage = new CartPage(driver);
+//        basePage.openJyskWebsite();
+//        Assert.fail("failed test specialno");
+//    }
 
     @Test
     public void searchProductViaBurgerMenu() throws InterruptedException {

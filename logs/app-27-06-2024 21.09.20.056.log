@@ -1,0 +1,7 @@
+2024-06-27 21:09:22,729 INFO c.i.l.Listener [main] TestsearchProductsWithFiltersWas starter
+2024-06-27 21:09:40,873 INFO c.i.j.jyskMainPage [main] 57 results for: Sofa Was found
+2024-06-27 21:09:40,904 INFO c.i.j.jyskMainPage [main] Sofa GEDVED 3-seater light grey
+2024-06-27 21:09:40,935 INFO c.i.j.jyskMainPage [main] Sofa GEDVED 3-seater grey
+2024-06-27 21:09:40,959 INFO c.i.j.jyskMainPage [main] Sofabed PARADIS light grey
+2024-06-27 21:09:44,469 INFO c.i.j.jyskMainPage [main] Sofabed PARADIS light grey Was successfully found
+2024-06-27 21:09:51,487 INFO c.i.l.Listener [main] TestsearchProductsWithFiltersPassed successfully

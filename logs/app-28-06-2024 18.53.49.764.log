@@ -1,0 +1,6 @@
+2024-06-28 18:54:29,748 INFO c.i.l.Listener [main] =================================================
+2024-06-28 18:54:29,756 INFO c.i.l.Listener [main] TestcompareProducts Was starter
+2024-06-28 18:54:29,756 INFO c.i.l.Listener [main] =================================================
+2024-06-28 18:54:54,747 INFO c.i.l.Listener [main] =================================================
+2024-06-28 18:54:54,748 INFO c.i.l.Listener [main] TestcompareProducts Passed successfully
+2024-06-28 18:54:54,749 INFO c.i.l.Listener [main] =================================================

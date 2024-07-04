@@ -1,6 +1,5 @@
 package com.itacademy.jyskPages;
 
-import dev.failsafe.internal.util.Assert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.checkerframework.checker.units.qual.A;
@@ -8,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -60,7 +58,6 @@ public class jyskMainPage extends BasePage {
         for (WebElement element: productsOnSRP){
             String productsOnSRPNames= element.getText();
             LOGGER.info(productsOnSRPNames);
-            //System.out.println(productsOnSRPNames);
             if (productsOnSRPNames.equals(needProductViaSearch)){
                 JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
                 javascriptExecutor.executeScript("arguments[0].click();",element);
@@ -85,7 +82,7 @@ public class jyskMainPage extends BasePage {
         burgerMenu.click();
         needMainCategoryInBurger.click();
         showAllButton.click();
-        Thread.sleep(3000);
+        Thread.sleep(8000);
         List<WebElement> subCategoriesOnSelectedCategoty = driver.findElements(By.xpath("//*[@class=\"category-menu__item-title mt-0\"]"));
         for (WebElement element:subCategoriesOnSelectedCategoty){
             String subCategoriesOnSelectedCategotyName = element.getText();
@@ -94,6 +91,7 @@ public class jyskMainPage extends BasePage {
                 closeSpamWindowButton.click();
                 JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
                 javascriptExecutor.executeScript("arguments[0].click();",element);
+                break;
             }
         }
         Thread.sleep(7000);
@@ -105,7 +103,6 @@ public class jyskMainPage extends BasePage {
         for (WebElement element: productsOnSelectedCategory){
             String productsOnSelectedCategoryName = element.getText();
             LOGGER.info(productsOnSelectedCategoryName);
-            //System.out.println(productsOnSRPNames);
             if (productsOnSelectedCategoryName.equals(needProductViaBurger)){
                 JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
                 javascriptExecutor.executeScript("arguments[0].click();",element);
