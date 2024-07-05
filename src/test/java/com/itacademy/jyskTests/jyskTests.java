@@ -12,7 +12,7 @@ import java.util.List;
 
 public class jyskTests extends BaseTest{
     private static final Logger LOGGER= LogManager.getLogger(jyskTests.class);
-    @Test (testName = "Pridumai Imena Testam ))")
+    @Test (testName = " Search product and add to the cart ))")
     public void searchProductAndAddToTheCart() throws InterruptedException {
         BasePage basePage = new BasePage(driver);
         jyskMainPage jyskMainPage = new jyskMainPage(driver);
