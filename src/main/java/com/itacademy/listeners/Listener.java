@@ -1,6 +1,6 @@
 package com.itacademy.listeners;
 
-import com.itacademy.jyskPages.jyskMainPage;
+import com.itacademy.jyskPages.JyskMainPage;
 import com.itacademy.utils.ScreenshotUtils;
 import io.qameta.allure.Allure;
 import org.apache.logging.log4j.LogManager;

@@ -4,7 +4,7 @@
 <suite name = "Suite1">
     <test name = "ui Tests">
         <classes>
-            <class name = "com.itacademy.jyskTests.jyskTests" />
+            <class name = "com.itacademy.jyskTests.JyskTests" />
             <class name = "com.itacademy.jyskTests.LogInTests" />
             <class name = "com.itacademy.jyskTests.WishlistTests" />
         </classes>

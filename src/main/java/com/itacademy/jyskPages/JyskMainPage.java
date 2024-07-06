@@ -1,8 +1,8 @@
 package com.itacademy.jyskPages;
 
+import com.itacademy.utils.Waiters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class jyskMainPage extends BasePage {
+public class JyskMainPage extends BasePage {
     String searchProduct="Sofa \n";
     String needProductViaSearch = "Sofabed PARADIS light grey";
     final String needParentCategory= "Bedroom" ;
@@ -40,17 +40,17 @@ public class jyskMainPage extends BasePage {
     private WebElement showAllButton;
     @FindBy (xpath = "//*[@class=\"category-header-text mt-0 mb-0\"]")
     private WebElement titleOnTheSelectedCategotyPage;
-    private static final Logger LOGGER = LogManager.getLogger(jyskMainPage.class);
+    private static final Logger LOGGER = LogManager.getLogger(JyskMainPage.class);
     public void cliclOnWebsiteLogo(){
         logo.click();
     }
-    public void searchProduct() throws InterruptedException {
-        Thread.sleep(2000);
+    public void searchProduct() {
+        Waiters.wait(3000);
         closeSpamWindowButton.click();
         searchField.sendKeys(searchProduct);
     }
 
-    public void openTDP() throws InterruptedException {
+    public void openTDP() {
         driver.findElement(By.xpath("(//*[@class='close-x'])[1]")).click();
         List<WebElement> productsOnSRP = driver.findElements(By.xpath("//*[@class='product-teaser-body'] //*[@class='product-teaser-title__name']"));
         WebElement titleOnSRP=driver.findElement(By.xpath("//*[@class='tabbed-search__heading mt-0']"));
@@ -65,9 +65,9 @@ public class jyskMainPage extends BasePage {
                 break;
             }
         }
-        Thread.sleep(5000);
+        Waiters.wait(3000);
     }
-    public void applyFilters() throws InterruptedException {
+    public void applyFilters() {
         searchProduct();
         allFiltersButton.click();
         priceFilterInRightSideMenu.click();
@@ -75,14 +75,14 @@ public class jyskMainPage extends BasePage {
         maxPriceFilter.sendKeys("225");
         showResultsButton.click();
         openTDP();
-        Thread.sleep(2000);
+        Waiters.wait(2000);
     }
 
-    public void searchProductViaBurger() throws InterruptedException {
+    public void searchProductViaBurger() {
         burgerMenu.click();
         needMainCategoryInBurger.click();
         showAllButton.click();
-        Thread.sleep(8000);
+        Waiters.wait(5000);
         List<WebElement> subCategoriesOnSelectedCategoty = driver.findElements(By.xpath("//*[@class=\"category-menu__item-title mt-0\"]"));
         for (WebElement element:subCategoriesOnSelectedCategoty){
             String subCategoriesOnSelectedCategotyName = element.getText();
@@ -94,9 +94,9 @@ public class jyskMainPage extends BasePage {
                 break;
             }
         }
-        Thread.sleep(7000);
+        Waiters.wait(3000);
         assert needSubCategoriesOnSelectedCategoty.equals(titleOnTheSelectedCategotyPage.getText()): "Something went wrong";
-        Thread.sleep(10000);
+        Waiters.wait(3000);
         List<WebElement> productsOnSelectedCategory = driver.findElements(By.xpath("//*[@class=\"product-teaser-body\"] //*[@class=\"product-teaser-title__name\"]"));
         List<String> productsOnSelectedCategoryTest = productsOnSelectedCategory.stream().map(x->x.getText()).toList();
         LOGGER.info(productsOnSelectedCategoryTest);
@@ -110,11 +110,11 @@ public class jyskMainPage extends BasePage {
                 break;
             }
         }
-        Thread.sleep(5000);
+        Waiters.wait(3000);
 
     }
 
-    public jyskMainPage (WebDriver driver){
+    public JyskMainPage(WebDriver driver){
         super(driver);
         PageFactory.initElements(driver,this);
     }

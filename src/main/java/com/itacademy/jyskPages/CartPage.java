@@ -1,5 +1,6 @@
 package com.itacademy.jyskPages;
 
+import com.itacademy.utils.Waiters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -22,11 +23,11 @@ private WebElement addToBasketButton;
 @FindBy (xpath = "//*[@class=\"btn cta primary\"]")
 private WebElement navigateToTheCheckoutButtonInSideMenu;
     private static final Logger LOGGER = LogManager.getLogger(CartPage.class);
-    public void openCartPage() throws InterruptedException {
+    public void openCartPage() {
         addToBasketButton.click();
         postcodeField.sendKeys(postcode);
         savePostcodeButton.click();
-        Thread.sleep(3000);
+        Waiters.wait(3000);
         ContinueShoppingButton.click();
         LOGGER.info("Product was successfuly added to the cart");
     }

@@ -2,6 +2,7 @@ package com.itacademy.jyskTests;
 
 import com.itacademy.jyskPages.BasePage;
 import com.itacademy.jyskPages.LogIn;
+import com.itacademy.utils.Waiters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -59,7 +60,7 @@ public class LogInTests extends BaseTest {
             logInButton.click();
             LOGGER.info("You have successfully logged in to your account");
         }
-        Thread.sleep(3000);
+        Waiters.wait(3000);
     }
 // nickolaiborohov@gmail.com
 //    Qwerty123!
