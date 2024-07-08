@@ -14,7 +14,7 @@ public class ApiTests {
                 .when().get("https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true")
                 .then().log().all().statusCode(200);
     }
-    @Test
+    @Test(priority = 1)
     public void putUpdateProfileWithoutCookieTest(){
         File file = new File("src/test/resources/json/jsonFile.json");
         given().log().all().contentType(ContentType.JSON)
