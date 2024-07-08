@@ -9,6 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CartPage extends BasePage {
+    public CartPage (WebDriver driver){
+        super(driver);
+        PageFactory.initElements(driver,this);
+    }
     String postcode ="SK7 6DD";
 @FindBy(id = "id='top-basket-amount'")
 private WebElement cartButtonInHeader;
@@ -32,8 +36,5 @@ private WebElement navigateToTheCheckoutButtonInSideMenu;
         LOGGER.info("Product was successfuly added to the cart");
     }
 
-    public CartPage (WebDriver driver){
-        super(driver);
-        PageFactory.initElements(driver,this);
-    }
+
 }

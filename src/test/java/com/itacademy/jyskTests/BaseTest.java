@@ -37,7 +37,7 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void baseAfterTestMethod(ITestResult result) throws FileNotFoundException {
+    public void baseAfterTestMethod(ITestResult result) {
         if (result.getStatus()==ITestResult.FAILURE){
 //            String methodName = result.getMethod().getMethodName();
 //            takeScreenshot();

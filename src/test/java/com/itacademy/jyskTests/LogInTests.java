@@ -1,7 +1,6 @@
 package com.itacademy.jyskTests;
 
 import com.itacademy.jyskPages.BasePage;
-import com.itacademy.jyskPages.LogIn;
 import com.itacademy.utils.Waiters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,6 +27,10 @@ public class LogInTests extends BaseTest {
     @FindBy(xpath = "(//*[@class='validation-failed alert alert-danger'])[2]")
     private WebElement actualPasswordErrorMessage;
     private static final Logger LOGGER= LogManager.getLogger(LogInTests.class);
+    @FindBy(xpath = "//*[@class='svg-w3-profile v-2']")
+    private WebElement openLogInForm;
+    @FindBy(xpath = "(//*[@class=\"header__action-text\"])[3]")
+    private WebElement myPageButtonInHeader;
     @DataProvider(name = "data-provider")
     public Object[][] dataProviderMethod() {
         return new Object[][]{
@@ -35,16 +38,15 @@ public class LogInTests extends BaseTest {
         };
     }
     @Test(dataProvider = "data-provider")
-    public void invalidLogInData(String email, String expectedEmailNotification,String expectedPasswordNotification) throws InterruptedException {
+    public void invalidLogInData(String email, String expectedEmailNotification,String expectedPasswordNotification) {
         PageFactory.initElements(driver,this);
         BasePage basePage = new BasePage(driver);
         basePage.openJyskWebsite();
-        LogIn logIn = new LogIn(driver);
-        logIn.openLogInForm();
+        openLogInForm.click();
         emailField.sendKeys(email);
         logInButton.click();
-        assert actualEmailErrorMessage.getText().equals(expectedEmailNotification): "Что-то не так с имейлом" ;
-        assert actualPasswordErrorMessage.getText().equals(expectedPasswordNotification): "Что-то не так с парооляем";
+        assert actualEmailErrorMessage.getText().equals(expectedEmailNotification): "Something is wrong with the email" ;
+        assert actualPasswordErrorMessage.getText().equals(expectedPasswordNotification): "Something is wrong with the password";
 
     }
     @Test
@@ -52,15 +54,16 @@ public class LogInTests extends BaseTest {
         PageFactory.initElements(driver,this);
         BasePage basePage = new BasePage(driver);
         basePage.openJyskWebsite();
-        LogIn logIn = new LogIn(driver);
-        logIn.openLogInForm();
+        openLogInForm.click();
         emailField.sendKeys(myEmail);
         passwordField.sendKeys(myPassword);
         if (logInButton.isDisplayed()){
             logInButton.click();
             LOGGER.info("You have successfully logged in to your account");
         }
-        Waiters.wait(3000);
+        Waiters.wait(2000);
+        assert myPageButtonInHeader.getText().equals("My page"):"It looks like you are not login ";
+
     }
 // nickolaiborohov@gmail.com
 //    Qwerty123!

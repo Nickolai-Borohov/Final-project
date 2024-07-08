@@ -2,10 +2,12 @@ package com.itacademy.jyskTests;
 
 import com.itacademy.jyskPages.BasePage;
 import com.itacademy.jyskPages.CartPage;
-import com.itacademy.jyskPages.JyskMainPage;
+import com.itacademy.jyskPages.SearchProductsPage;
+import com.itacademy.utils.ScreenshotUtils;
 import com.itacademy.utils.Waiters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class JyskTests extends BaseTest{
@@ -13,7 +15,7 @@ public class JyskTests extends BaseTest{
     @Test (testName = " Search product and add to the cart ))")
     public void searchProductAndAddToTheCart() throws InterruptedException {
         BasePage basePage = new BasePage(driver);
-        JyskMainPage jyskMainPage = new JyskMainPage(driver);
+        SearchProductsPage jyskMainPage = new SearchProductsPage(driver);
         CartPage cartPage = new CartPage(driver);
         basePage.openJyskWebsite();
         jyskMainPage.searchProduct();
@@ -26,23 +28,24 @@ public class JyskTests extends BaseTest{
     @Test
     public void searchProductsWithFilters() throws InterruptedException {
         BasePage basePage = new BasePage(driver);
-        JyskMainPage jyskMainPage = new JyskMainPage(driver);
+        SearchProductsPage jyskMainPage = new SearchProductsPage(driver);
         basePage.openJyskWebsite();
         jyskMainPage.applyFilters();
     }
 //    @Test
 //    public void compareProducts() throws InterruptedException {
 //        BasePage basePage = new BasePage(driver);
-//        jyskMainPage jyskMainPage = new jyskMainPage(driver);
-//        CartPage cartPage = new CartPage(driver);
 //        basePage.openJyskWebsite();
-//        Assert.fail("failed test specialno");
-//    }
+//        Assert.fail("failed test special");
+//        CartPage cartPage = new CartPage(driver);
+//        cartPage.openCartPage();
+//        ScreenshotUtils screenshotUtils = new ScreenshotUtils(driver);
+//        screenshotUtils.takeScreenshot();}
 
     @Test
     public void searchProductViaBurgerMenu() throws InterruptedException {
         BasePage basePage = new BasePage(driver);
-        JyskMainPage jyskMainPage = new JyskMainPage(driver);
+        SearchProductsPage jyskMainPage = new SearchProductsPage(driver);
         CartPage cartPage = new CartPage(driver);
         basePage.openJyskWebsite();
         jyskMainPage.searchProductViaBurger();

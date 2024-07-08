@@ -20,11 +20,11 @@ public class WishlistTests {
     @Test
     public void addProductToTheWishlist() throws InterruptedException {
         open("https://jysk.co.uk/");
-        Thread.sleep(3000);
+        Waiters.wait(2000);
         $(By.xpath("(//*[@class='coi-banner__accept'])[1]")).click();
         WebElement searchField = $(By.xpath("//*[@class='search-input form-control']"));
         searchField.sendKeys(searchTextforAddToTheWishlist);
-        Thread.sleep(2000);
+        Waiters.wait(2000);
         $(By.xpath("(//*[@class='close-x'])[2]")).click();
         ElementsCollection productsOnSRP= $$(By.xpath("//*[@class='product-teaser']"));
         LOGGER.info(productsOnSRP.size());
@@ -38,7 +38,6 @@ public class WishlistTests {
                 break;
             }
         }
-        Waiters.wait(3000);
     }
 
 }

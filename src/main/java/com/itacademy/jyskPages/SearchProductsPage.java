@@ -12,7 +12,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class JyskMainPage extends BasePage {
+public class SearchProductsPage extends BasePage {
+    public SearchProductsPage(WebDriver driver){
+        super(driver);
+        PageFactory.initElements(driver,this);
+    }
     String searchProduct="Sofa \n";
     String needProductViaSearch = "Sofabed PARADIS light grey";
     final String needParentCategory= "Bedroom" ;
@@ -40,7 +44,7 @@ public class JyskMainPage extends BasePage {
     private WebElement showAllButton;
     @FindBy (xpath = "//*[@class=\"category-header-text mt-0 mb-0\"]")
     private WebElement titleOnTheSelectedCategotyPage;
-    private static final Logger LOGGER = LogManager.getLogger(JyskMainPage.class);
+    private static final Logger LOGGER = LogManager.getLogger(SearchProductsPage.class);
     public void cliclOnWebsiteLogo(){
         logo.click();
     }
@@ -114,8 +118,5 @@ public class JyskMainPage extends BasePage {
 
     }
 
-    public JyskMainPage(WebDriver driver){
-        super(driver);
-        PageFactory.initElements(driver,this);
-    }
+
 }
